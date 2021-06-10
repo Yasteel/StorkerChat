@@ -47,6 +47,7 @@ socket.on('newMessage', (user) =>
 $('.btn_send').click(function()
 {
   var msg = $('.msg_text').val();
+  msg = msg.charAt(0).toUpperCase() + msg.slice(1);
   if(!msg)
   {
     alert('Cannot send an empty Message');
