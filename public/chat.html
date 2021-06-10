@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Socket IO Chat App</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/structure.css">
+    <script src="https://kit.fontawesome.com/931436d7f9.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper _2">
+      <h1 id="welcome_msg">Welcome</h1>
+      <div class="message_wrapper">
+        <div class="messages">
+
+        </div>
+        <div class="text">
+          <input type="text" class="msg_text" placeholder="Enter a message">
+          <button type="button" class="btn btn_send">Send</button>
+        </div>
+      </div>
+      <div class="room_id">
+        <input type="text" id="room_id" >
+        <button class="copy"><i class="far fa-clipboard" title="Copy Code"></i></button>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.1/qs.min.js" integrity="sha512-aTKlYRb1QfU1jlF3k+aS4AqTpnTXci4R79mkdie/bp6Xm51O5O3ESAYhvg6zoicj/PD6VYY0XrYwsWLcvGiKZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

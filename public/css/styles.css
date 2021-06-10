@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root
+{
+	--error: #a72a30;
+	--d_black: #161920;
+	--l_black: #373F51;
+	--l_gray: #646b7a;
+	--d_white: #bcc0c7;
+  --l_white: #D8DBE2;
+	--l_blue: #1CB5E0;
+	--d_blue: #1690b3;
+  --l_green: #17B890;
+  --li_green: #45c6a6;
+}
+
+body
+{
+  font-family: helvetica;
+}
+
+.wrapper
+{
+  background: var(--l_black);
+}
+
+.wrapper .form_wrapper
+{
+  border: 1px solid var(--li_green);
+}
+
+input[name="username"],
+input[name="room"]
+{
+  border: 1px solid var(--l_green);
+  background: none;
+  color: var(--l_green);
+}
+
+.message_wrapper
+{
+  border: 1px solid var(--l_green);
+}
+
+.btn
+{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: var(--l_green);
+  color: var(--l_white);
+  transition: 400ms ease-in;
+}
+
+.btn:hover
+{
+  background: var(--li_green);
+  color: var(--l_black);
+
+}
+
+/* Send Text Styling */
+.msg_text
+{
+  border: 1px solid var(--l_green);
+  background: none;
+  color: var(--l_white);
+}
+
+h1
+{
+  font-family: 'Odibee Sans', cursive;
+  letter-spacing: 10px;
+  color: var(--l_green);
+}
+
+.message .header p
+{
+  font-weight: 600;
+}
+
+.message.to
+{
+  border-radius: 15px 15px 15px 0;
+  background: var(--l_green);
+}
+
+.message.from
+{
+  border-radius: 15px 15px 0 15px;
+  background: var(--l_white);
+  text-align: right;
+}
+
+.message.from .header p
+{
+  color: var(--d_blue);
+}
+
+.system_message p
+{
+  font-weight: 800;
+  color: var(--l_blue);
+  text-align: center;
+}
+
+.room_id input[type="text"]
+{
+  background: none;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  color: var(--l_green);
+  font-family: helvetica;
+}
+
+.room_id button
+{
+  cursor: pointer;
+  text-align: center;
+  background: none;
+  border: 1px solid var(--l_green);
+  border-radius: 5px;
+  color: var(--l_green);
+  transition: 400ms ease-in;
+}
+
+.room_id button:hover
+{
+  background: var(--li_green);
+  color: var(--l_black);
+}
