@@ -131,16 +131,94 @@ input[type="submit"]
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px)
+@media only screen and (min-width: 600px)
 {
+  .wrapper
+  {
+    flex-direction: column;
+  }
 
-} */
+  .wrapper .form_wrapper
+  {
+    height: 50%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .form_wrapper form
+  {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .message_wrapper
+  {
+    width: 100vw;
+    height: 85vh;
+    padding: 15px;
+
+    display: grid;
+    grid-template-rows: 88% 12%;
+    grid-gap: 15px;
+  }
+
+
+  .room_id input[type="text"]
+  {
+    width: 280px;
+    height: 25px;
+  }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 768px)
+@media only screen and (min-width: 768px)
 {
+  .wrapper
+  {
+    flex-direction: column;
+  }
 
-} */
+  .wrapper .form_wrapper
+  {
+    height: 50%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .form_wrapper form
+  {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .message_wrapper
+  {
+    width: 100vw;
+    height: 85vh;
+    padding: 15px;
+
+    display: grid;
+    grid-template-rows: 88% 12%;
+    grid-gap: 15px;
+  }
+
+
+  .room_id input[type="text"]
+  {
+    width: 280px;
+    height: 25px;
+  }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px)

@@ -12,8 +12,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 io.on('connection', (socket) =>
 {
-  console.log('New Client Connected');
-
   socket.emit('welcomeMessage', 'Welcome to Socket.IO Test Application MF');
 
   socket.on('joinRoom' , (user) =>
@@ -22,7 +20,6 @@ io.on('connection', (socket) =>
 
     socket.on('newMessage', (message) =>
     {
-      console.log('New Message');
       io.to(user.roomId).emit('newMessage', message);
     });
 
