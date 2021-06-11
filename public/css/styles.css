@@ -137,3 +137,16 @@ h1
   background: var(--li_green);
   color: var(--l_black);
 }
+
+@media only screen and (max-width: 980px)
+{
+  .wrapper .form_wrapper,
+  input[name="username"],
+  input[name="room"],
+  .message_wrapper,
+  .msg_text,
+  .copy
+  {
+    border: 3px solid var(--l_green) !important;
+  }
+}
